@@ -1,249 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>Karl Digital Tools</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#050816;
-color:white;
+    background:linear-gradient(to right,#020b1f,#17174a);
+    color:white;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#000;
-position:sticky;
-top:0;
+    width:100%;
+    background:black;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-font-size:28px;
-font-weight:bold;
-color:#8b5cf6;
+    font-size:28px;
+    font-weight:bold;
+    color:#7b4dff;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:16px;
+    color:white;
+    text-decoration:none;
+    margin-left:35px;
+    font-size:20px;
 }
 
 .hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
-background:linear-gradient(135deg,#0f172a,#111827,#1e1b4b);
-}
-
-.hero-content{
-max-width:800px;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
 .hero h1{
-font-size:70px;
-margin-bottom:20px;
+    font-size:90px;
+    max-width:900px;
 }
 
 .hero p{
-font-size:22px;
-color:#cbd5e1;
-margin-bottom:40px;
+    margin-top:20px;
+    font-size:24px;
+    color:#dcdcdc;
 }
 
 .btn{
-display:inline-block;
-padding:16px 40px;
-background:linear-gradient(90deg,#7c3aed,#2563eb);
-color:white;
-text-decoration:none;
-border-radius:12px;
-font-size:18px;
-font-weight:bold;
+    margin-top:40px;
+    display:inline-block;
+    padding:18px 45px;
+    background:linear-gradient(to right,#7b2fff,#2962ff);
+    border-radius:14px;
+    text-decoration:none;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
 }
 
 .features{
-padding:80px 40px;
-text-align:center;
+    padding:80px 20px;
+    text-align:center;
 }
 
 .features h2{
-font-size:42px;
-margin-bottom:50px;
+    font-size:50px;
+    margin-bottom:40px;
 }
 
-.feature-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-max-width:1200px;
-margin:auto;
+.boxes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
 }
 
-.card{
-background:#111827;
-padding:35px;
-border-radius:18px;
-border:1px solid #1f2937;
+.box{
+    width:300px;
+    background:#101935;
+    padding:30px;
+    border-radius:20px;
 }
 
-.card h3{
-margin-bottom:15px;
-color:#8b5cf6;
+.box h3{
+    margin-bottom:15px;
+    font-size:28px;
 }
 
-.pricing{
-padding:80px 40px;
-text-align:center;
-}
-
-.price-box{
-background:#111827;
-max-width:400px;
-margin:auto;
-padding:50px;
-border-radius:20px;
-border:1px solid #1f2937;
-}
-
-.price-box h2{
-font-size:50px;
-margin:20px 0;
-color:#8b5cf6;
+.box p{
+    color:#cfcfcf;
+    line-height:1.6;
 }
 
 footer{
-padding:30px;
-text-align:center;
-background:#020617;
-color:#94a3b8;
+    text-align:center;
+    padding:30px;
+    background:black;
+    margin-top:50px;
+    color:#aaa;
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:45px;
-}
-
 header{
-padding:20px;
+    padding:20px;
 }
 
+.logo{
+    font-size:22px;
 }
 
+nav a{
+    margin-left:15px;
+    font-size:16px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.btn{
+    font-size:22px;
+}
+}
 </style>
-
 </head>
 
 <body>
 
 <header>
+    <div class="logo">Karl Digital Tools</div>
 
-<div class="logo">
-Karl Digital Tools
-</div>
-
-<nav>
-<a href="#features">Features</a>
-<a href="#pricing">Pricing</a>
-<a href="https://t.me/Karlroul">Telegram</a>
-</nav>
-
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://t.me/Karlroul">Telegram</a>
+    </nav>
 </header>
 
 <section class="hero">
 
-<div class="hero-content">
+    <h1>Premium Digital Software</h1>
 
-<h1>
-Premium Digital Software
-</h1>
+    <p>
+        Fast, Secure & Beginner Friendly Digital Tools
+    </p>
 
-<p>
-Fast, Secure & Beginner Friendly Digital Tools
-</p>
-
-<a class="btn" href="https://t.me/Karlroul">
-BUY NOW
-</a>
-
-</div>
+    <a href="https://payhip.com/b/82KmJ" class="btn">
+        BUY NOW
+    </a>
 
 </section>
 
 <section class="features" id="features">
 
-<h2>
-Why Choose Us
-</h2>
+    <h2>Why Choose Us</h2>
 
-<div class="feature-grid">
+    <div class="boxes">
 
-<div class="card">
-<h3>Fast Performance</h3>
-<p>Optimized software for smooth and reliable performance.</p>
-</div>
+        <div class="box">
+            <h3>Fast Performance</h3>
+            <p>
+                Optimized software with smooth performance and quick setup.
+            </p>
+        </div>
 
-<div class="card">
-<h3>Easy Setup</h3>
-<p>Beginner friendly installation and quick access.</p>
-</div>
+        <div class="box">
+            <h3>Beginner Friendly</h3>
+            <p>
+                Easy to use interface for all users without experience.
+            </p>
+        </div>
 
-<div class="card">
-<h3>Instant Access</h3>
-<p>Receive your files instantly after payment.</p>
-</div>
+        <div class="box">
+            <h3>24/7 Support</h3>
+            <p>
+                Get instant support anytime through Telegram.
+            </p>
+        </div>
 
-</div>
-
+    </div>
 </section>
 
-<section class="pricing" id="pricing">
+<section class="features" id="pricing">
 
-<div class="price-box">
+    <h2>Pricing</h2>
 
-<h3>
-Premium Package
-</h3>
+    <div class="boxes">
 
-<h2>
-$100
-</h2>
+        <div class="box">
+            <h3>$100</h3>
 
-<p>
-USDT (TRC20) Accepted
-</p>
+            <p>
+                One time payment with instant access after purchase.
+            </p>
 
-<br>
+            <a href="https://payhip.com/b/82KmJ" class="btn">
+                Buy Now
+            </a>
+        </div>
 
-<a class="btn" href="https://t.me/Karlroul">
-Contact To Buy
-</a>
-
-</div>
-
+    </div>
 </section>
 
 <footer>
-
-© 2026 Karl Digital Tools
-
+    © 2026 Karl Digital Tools - All Rights Reserved
 </footer>
 
 </body>
