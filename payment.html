@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - Karl Digital Tools</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:#050816;
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:600px;
+    background:#101935;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:35px;
+    color:#7b4dff;
+    margin-bottom:30px;
+}
+
+.wallet{
+    background:#0a122b;
+    padding:20px;
+    border-radius:12px;
+    word-break:break-all;
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(to right,#7b2fff,#2962ff);
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.telegram{
+    margin-top:25px;
+}
+
+.telegram a{
+    color:#6ea8ff;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.note{
+    margin-top:25px;
+    color:#cfcfcf;
+    line-height:1.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>USDT Payment</h1>
+
+<div class="price">
+$100
+</div>
+
+<div class="wallet" id="wallet">
+TGHLkfiP1sSUkpN4cJwYn4et1gW2vKnL7c
+</div>
+
+<button onclick="copyWallet()">
+Copy Wallet Address
+</button>
+
+<div class="telegram">
+Telegram Support:
+<br><br>
+<a href="https://t.me/Karlroul">
+https://t.me/Karlroul
+</a>
+</div>
+
+<div class="note">
+Send exact payment amount using USDT TRC20 network.
+<br><br>
+After payment send screenshot in Telegram.
+</div>
+
+</div>
+
+<script>
+
+function copyWallet(){
+
+const wallet =
+document.getElementById("wallet").innerText;
+
+navigator.clipboard.writeText(wallet);
+
+alert("Wallet Address Copied!");
+
+}
+
+</script>
+
+</body>
+</html>
