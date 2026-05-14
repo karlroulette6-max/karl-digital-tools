@@ -1,17 +1,19 @@
+```html id="b3r8vk"
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Karl Digital Tools</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
@@ -73,6 +75,8 @@ nav a{
     font-size:28px;
     font-weight:bold;
     transition:0.3s;
+    border:none;
+    cursor:pointer;
 }
 
 .btn:hover{
@@ -148,89 +152,111 @@ nav a{
     font-size:22px;
 }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Karl Digital Tools</div>
 
-    <nav>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="https://t.me/Karlroul">Telegram</a>
-    </nav>
+<div class="logo">
+Karl Digital Tools
+</div>
+
+<nav>
+<a href="#features">Features</a>
+<a href="#pricing">Pricing</a>
+<a href="https://t.me/Karlroul">Telegram</a>
+</nav>
+
 </header>
 
 <section class="hero">
 
-    <h1>Premium Digital Software</h1>
+<h1>Premium Digital Software</h1>
 
-    <p>
-        Fast, Secure & Beginner Friendly Digital Tools
-    </p>
+<p>
+Fast, Secure & Beginner Friendly Digital Tools
+</p>
 
-    <a href="https://payhip.com/b/82KmJ" class="btn">
-        BUY NOW
-    </a>
+<button class="btn" onclick="showWallet()">
+BUY NOW
+</button>
 
 </section>
 
 <section class="features" id="features">
 
-    <h2>Why Choose Us</h2>
+<h2>Why Choose Us</h2>
 
-    <div class="boxes">
+<div class="boxes">
 
-        <div class="box">
-            <h3>Fast Performance</h3>
-            <p>
-                Optimized software with smooth performance and quick setup.
-            </p>
-        </div>
+<div class="box">
+<h3>Fast Performance</h3>
+<p>
+Optimized software with smooth performance and quick setup.
+</p>
+</div>
 
-        <div class="box">
-            <h3>Beginner Friendly</h3>
-            <p>
-                Easy to use interface for all users without experience.
-            </p>
-        </div>
+<div class="box">
+<h3>Beginner Friendly</h3>
+<p>
+Easy to use interface for all users without experience.
+</p>
+</div>
 
-        <div class="box">
-            <h3>24/7 Support</h3>
-            <p>
-                Get instant support anytime through Telegram.
-            </p>
-        </div>
+<div class="box">
+<h3>24/7 Support</h3>
+<p>
+Get instant support anytime through Telegram.
+</p>
+</div>
 
-    </div>
+</div>
+
 </section>
 
 <section class="features" id="pricing">
 
-    <h2>Pricing</h2>
+<h2>Pricing</h2>
 
-    <div class="boxes">
+<div class="boxes">
 
-        <div class="box">
-            <h3>$100</h3>
+<div class="box">
 
-            <p>
-                One time payment with instant access after purchase.
-            </p>
+<h3>$100</h3>
 
-            <a href="https://payhip.com/b/82KmJ" class="btn">
-                Buy Now
-            </a>
-        </div>
+<p>
+One time payment with instant access after purchase.
+</p>
 
-    </div>
+<button class="btn" onclick="showWallet()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
-    © 2026 Karl Digital Tools - All Rights Reserved
+© 2026 Karl Digital Tools - All Rights Reserved
 </footer>
+
+<script>
+
+function showWallet() {
+
+alert(
+"USDT TRC20 Address:\n\nYOUR_USDT_ADDRESS_HERE"
+);
+
+}
+
+</script>
 
 </body>
 </html>
+```
