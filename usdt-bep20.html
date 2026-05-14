@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>USDT BEP20 Payment</title>
+
+<style>
+
+body{
+background:#020617;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+color:white;
+}
+
+.box{
+background:#0f172a;
+padding:50px;
+border-radius:25px;
+text-align:center;
+width:700px;
+max-width:90%;
+}
+
+h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.price{
+font-size:60px;
+color:#7b2cff;
+margin-bottom:30px;
+}
+
+.address{
+background:#020617;
+padding:20px;
+border-radius:15px;
+font-size:24px;
+word-break:break-all;
+margin-bottom:30px;
+}
+
+button{
+padding:18px 45px;
+border:none;
+border-radius:15px;
+font-size:24px;
+cursor:pointer;
+background:linear-gradient(90deg,#7b2cff,#2f6bff);
+color:white;
+font-weight:bold;
+}
+
+a{
+color:#60a5fa;
+text-decoration:none;
+font-size:24px;
+}
+
+p{
+margin-top:30px;
+font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>USDT BEP20</h1>
+
+<div class="price">$100</div>
+
+<div class="address" id="wallet">
+0x01349c71448a8481e4f2de2dc79d1d1a53a3a611
+</div>
+
+<button onclick="copyWallet()">
+Copy Wallet Address
+</button>
+
+<p>
+Telegram Support:
+<br><br>
+<a href="https://t.me/Karlroul">
+https://t.me/Karlroul
+</a>
+</p>
+
+<p>
+Send payment using BEP20 network.
+</p>
+
+</div>
+
+<script>
+
+function copyWallet(){
+
+const text =
+document.getElementById("wallet").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Wallet Address Copied!");
+
+}
+
+</script>
+
+</body>
+</html>
